@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "pytemplate"
+version = "0.0.1"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "A Python package template"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # Some dependencies.
+]
+keywords = [
+    "template",
+    "setuptools",
+    "development",
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/gen-how/pytemplate"
+"Bug Tracker" = "https://github.com/gen-how/pytemplate/issues"
+
+
+[project.optional-dependencies]
+dev = [
+    # Some development related dependencies.
+    # "pylint",
+    # "yapf",
+    # "black",
+]
+test = [
+    # Some testing related dependencies.
+]

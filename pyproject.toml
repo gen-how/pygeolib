@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "pytemplate"
+name = "pygeolib"
 version = "0.0.1"
 authors = [
-  { name="Example Author", email="author@example.com" },
+  { name="gen-how", email="author@example.com" },
 ]
-description = "A Python package template"
+description = "A light-weight Python geometry library"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
@@ -21,22 +21,21 @@ dependencies = [
     # Some dependencies.
 ]
 keywords = [
-    "template",
-    "setuptools",
-    "development",
+    "math",
+    "geometry",
 ]
 
 
 [project.urls]
-"Homepage" = "https://github.com/gen-how/pytemplate"
-"Bug Tracker" = "https://github.com/gen-how/pytemplate/issues"
+"Homepage" = "https://github.com/gen-how/pygeolib"
+"Bug Tracker" = "https://github.com/gen-how/pygeolib/issues"
 
 
 [project.optional-dependencies]
 dev = [
     # Some development related dependencies.
     # "pylint",
-    # "yapf",
+    "yapf",
     # "black",
 ]
 test = [

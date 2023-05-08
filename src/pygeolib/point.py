@@ -26,9 +26,6 @@ class Point2D:
     def __truediv__(self, divisor: float) -> Point2D:
         return Point2D(self.x / divisor, self.y / divisor)
 
-    def distance_to(self, other: Point2D) -> float:
-        return math.sqrt((self.x - other.x)**2 + (self.y - other.y)**2)
-
     @property
     def coords(self) -> tuple[float, float]:
         return (self.x, self.y)
@@ -36,3 +33,6 @@ class Point2D:
     @property
     def int_coords(self) -> tuple[int, int]:
         return (int(self.x), int(self.y))
+
+    def distance_to(self, other: Point2D) -> float:
+        return math.sqrt((self.x - other.x)**2 + (self.y - other.y)**2)

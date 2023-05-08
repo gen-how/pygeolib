@@ -50,3 +50,11 @@ class Rectangle(object):
         if (x1 < x2) and (y1 < y2):
             return Rectangle((x1, y1), (x2, y2))
         return None
+    
+    def intersection_over_union(self, other: Rectangle) -> float:
+        inter = self.intersection(other)
+        if inter is None:
+            return 0
+        
+        union = self.area + other.area - inter.area
+        return inter.area / union

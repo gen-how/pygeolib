@@ -31,3 +31,4 @@ class RectangleTestCase(unittest.TestCase):
         c = Rectangle((0, 0), (5, 5))
         d = Rectangle((10, 10), (15, 15))
         self.assertEqual(0, c.intersection_over_union(d))
+        
